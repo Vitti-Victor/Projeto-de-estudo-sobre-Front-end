@@ -40,10 +40,8 @@ body * {
 }
 
 #container {
-  height: 100%;
   width: 100%;
   max-width: 588px;
-  max-height: 712px;
   /*margin-right: auto;
   margin-left: auto;
   margin-top: auto;
