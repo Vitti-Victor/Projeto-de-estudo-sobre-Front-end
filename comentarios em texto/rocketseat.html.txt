@@ -1,0 +1,32 @@
+<p><\p> significa paragrafo
+
+<a><\a> Adicionar  um link de direcionameto
+
+<img scr="" \> Para colocar alguma imagem
+
+<div><\div> Criar divisoes e podem ser marcados como um class ou id(todos podem ser marcados)
+
+<nav><\nav> Area de navegação
+
+<section><\section> criar seções de informarçoes
+
+<footer><\footer> Para criar o rodape (usando o comando &copy irá aparecer o sibolo dos direitos reservados)
+
+<h1><\h1> Para criar um título(pode ir até h6)
+
+<ul><\ul> Para se criar uma lista sendo recomendado usar <li><\li> para criar uma lista desordenada
+
+<ol><\ol> Usado para criar uma lista ordenada com numeros na frente tendo de usar também o <li></li>
+
+<link rel="stylesheet" href=""> Para colocar o aquivo em css ou em outra linguagem.
+
+<link rel="icon" href=""> Para colocar algum icone
+
+<link rel="alternate" href=""> Para colocar como pesquisar na internet (https:www.bmw.com.br/index.html)/* Ver melhor qual seu funcionamento*/
+
+target="_blank"/* É um atributo para criado para acesar outra página sem sair da original (pode ser usado na tag "<a>") */
+
+<script scr=""></script> /* Para adicionar as progranações do JavaScript */
+
+onclick = "" /* desperte ao clicar. Dentro do " É preciso dar o nome de uma função que decerá ser utilizado no js " */
+

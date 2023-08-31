@@ -1,0 +1,159 @@
+É composto de declarações exemplo:
+<!-- Seletor tag --> 
+body{
+   background: black; 
+<!-- Propriedade: valor; -->
+}
+
+Isso fará que o fundo da tela seja preto
+
+Como css é em modo cascata, a ultima proprieda e a ultima tag que ira sobrepor as mesmas tags anteriores com o mesmo nome
+
+cada Seletor terá um peso:
+
+#id {             |.class{            | element{
+   /* peso 100 */ |	/* peso 10*/  |     /* peso 1*/
+	          |                   |
+}                 |}                  |}
+
+
+Html:		                      |Css:
+	                              |	
+<p id="unico">paragrafos<\p>          |#unico {
+<p class="unico">outro paragrafo<\p>  |	color:green;
+<p>qualquer paragrafo<\p>             |}
+				      |
+                                      |.unico {
+				      |	 color: blue;
+				      |}
+                                      |
+				      |p {
+				      | color: orenge;
+				      |}	
+		
+O que ira prevalecer por ter maior peso será o: #unico por ter maior peso que os outros.
+
+border: 1px solid red; /* Irá criar uma borda de 1px reto da cor vermelho (posso alterar os parametros conforme a minha necessidade)*/
+
+Para deixar a borda com um raio, é preciso primeiro colocar o "border" e depois "border-radius"
+
+height: 60px; /* significa a altura da caixa (pois em web todos os elementos são em formatos de caixa) (eixo y) */
+
+width: 60px; /* Significa a largura da caixa (eixo x)  */  
+
+padding 60px; /* Preenchimento interno (Cria uma margem invisivel em todas os lados) */
+
+margin: 20px; /* Cria uma margem específica do lado esquerdo da página*/
+
+margin-left: auto /* Faz com que a imagem vá para a esquerda ( pode se colocar valores como 50px) */
+
+margin-right: auto /* Faz com que a imagem vá para a direita ( pode se colocar valorer como 50 px) */
+
+margin: 56px auto 0px auto; /* Dessa fora ele funciona como um relógio. Os "56px" irão para o top, "auto" para right, "0px" para botton e "auto" para left */
+
+Colocando "margin-right: auto;" e "margin-left: auto;" no mesmo seletor, irá mover a caixa invisivel para o centro da tela ( porém não ira contar o topo e a base ). Adicionando também "margin-top: auto;" e "margin-botton: auto;" irá mover a caixa invisivel para o centro de toda a página.
+
+Pode se usar "margin: auto;" que terá a mesma função de centralizar a caixa, porém irá contar somente o  eixo x (a largura).
+
+display: inline; /* diminui o tamanho da caixa (invisivel) alinhando as escritas */
+
+display: block; /* Aumenta o tamanho da caixa (invisivel) quebrando de linha as escritas (Ira dar a largura na tela definida pelo width)  */
+
+display: none; /* Faz o conteudo do seletor sumir */
+
+
+
+background-image: url(); /* Fará com que vc coloque uma imagem de fundo no seu site (no url é só colocar "./" e escolher o local da imagem)*/
+
+background-image: no-repeat:/* Fará com que a imagem não se repita ni site ( caso a imagem seja muito pequena ou apenas por correção de imagem no site) */
+
+backgrond-position: center; /* Para centralizar a imagem no meio do site */
+
+backgrond-position: top center; /* Para centralizar a imagem do topo até o centro da página */
+
+backgroun-size: cover; /* Irá preencher toda a página com a imagem selecionada (Bastante ultil para dispositivos móveis para não deixar nenhuma parte em branco) */
+
+background-size: contain; /* Irá deixar a imagem contida em uma pequena posição (poderá mudar o tamanho com width e com o heigth) */
+
+Eu também posso colocar tudo dentro de um unico background:
+
+background: pearple url() no-repeat top conter / cover;
+Exemplo contido no ./style.css /* Pode ser usado como um atalho para qualquer outra propriedade */
+
+body * { /* O "*" em um seletor significa "Seletor universal". Significa que ele irá aplicar as modificações dentro do "body"  */
+}
+
+font-weight: 500; /* Aumenta o peso na escrita (deixa o negrito mais forte ou mais fraco) */
+
+font-size: 16px; /* Aumenta o tamanho da escrita */
+
+line-height: 24px; /* Altura de linha */
+
+box-sizing: border-box: /* A medida do tamanho da caixa para que sseja medida atraves da borda, sendo assim, o site irá manter o valor de"width" e irá se virar para color o valor do "padding" */
+
+
+/* QUANDO SE ESTÁ COMEÇANDO, É BASTANTE RECOMENDADO USAR O "border: solid red 1px;" PARA MELHOR VISUALIZAÇÃO DA CAIXA E NÃO SE PERDER */
+
+list-style: none; /* Tira as estilisaçoes das listas */
+
+display: flex; /* Irá fazer com que todos as caixas fiquem flexiveis (encontrei um jeito de se encaixarem como der) */
+
+	/* DESBLOQUEADOS USANDO O "display: flex;" */
+
+flex-direction: row; /* Por padrão ele já é row (em linha)*/
+
+flex-direction: column; /* Fará com que eles fiquem em colunas */
+
+gap: 8px; /* Irá colocar um espaçamento de 8 pixels entre as colunas ou entre as linhas caso se use row */
+
+justify-content: center; /* Irá alinhas as listas no centro (cria uma linha imaginária para centralizar os itens no eixo y )*/
+
+align-itens: center; /* alinha os itens no centra da caixa (cria uma linha imaginaria no eixo x em cada item)*/
+
+backdrop-filter: blur(4px); /* Irá colocar um embaçado no elemento */
+
+/* Alguns sites não irão suportar o "backdrop-filter". É recomendavel acessar o site https://caniuse.com/?search=backdrop-filter e pesquisar a respeito de como usar. Exemplo: o safari não irá aceitar o "backdrop-filter: blur(4px);" mas irá aceitar "-webkit-backdrop-filter: blur(4px);" */
+
+text-decoration: none;  /* Para tirar a linha de link em baixo das listas */
+
+text-decoration: line-through; /* Para colocar a linha no meio do elenento */
+
+text-decoration: overline; /* Para colocar a linha em cima do elemento */
+
+
+pseudo-selecto ":hover" se ultiliza como interação do mouse nos icones ou elementos na página
+
+transition: all 1s; /*Faz a transição do elemento em 1 segundo (pode ser alterado o valor do tempo e também de segundos "s" para miliseguns "ms")  */
+
+transition: background 2s; /* Faz a transação somente do background */
+
+transitio: cubic-bezier() 2s;  /* Serve para indicar a curva de velocidade e é definida em quatro pontos, nos quais o primeiro e o último representam o início e o fim da transição */
+
+z-index: 1; /* Para sobrepor a camada ) */
+
+
+position: absolute; /* Ele faz uma sobreposição de camadas (podendo ser usado junto do "z-index: 1;" para sobrepor a camada ) */
+
+position: relative; /* Ele irá relativisar o "absolute"  */
+
+/* No exemplo usado, ele usou:
+
+#switch {
+  position: relative;
+
+}
+
+#switch button{
+  position: absolute;
+}
+
+Ou seja, o elemento "#switch button" será relativo sobre o elemento "#switch" pelo simples fato do elemento "#switch" estar recebendo "position: relative;". ( Só irá jogar o item para dentro da caixa imaginária )
+ */
+
+left: initial; /* Para quando mudar de estilo, "button" volte para o inicio */
+
+
+/* Na hora de alinhar itens é sempre bom usar o transform: translateY(); para poder ajustar o eixo y ou transform: tranlateX(); para ajustar o eixo x. É recomendável usar para alinhar o eixo y um top: 50%; junto de um transform: translate(-50%); para alinhar os itens */
+
+
+

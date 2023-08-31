@@ -1,0 +1,119 @@
+É uma linguagem de programação e ela é interpretada pelos navegadores.
+
+O HTML representa a estrutura, o CSS é a beleza e o JS é a inteligência.
+
+Pode ser usado para contruir aplicações web, desktop e mobile.
+
+Função:
+
+alert("Fala dev !") Irá fazer aparecer uma caixa de alerta com a mensagem escrita dentro das aspas duplas.
+
+alert((10 * 1000) + " abraços !") Irá printar na tela uma caixa de alerta com o resultado do calculo em seguida irá aparecer a escrita dentro das aspas duplas 
+// Se no lugar de " abraços !" estivesse algum numero, o + deixaria de ser um operador de concatenação e viraria um operador de soma matemática. 
+
+_____________________________________________________________________________
+
+// Declaro e atribuo valor
+
+let boasVindas = "Fala, Dev!" //Valor original
+boasVindas = "Fala, Dev! Beleza?" //Foi atribuido outro valor a variável
+
+A palavra chave "let" usada na variavel "boasVindas", faz com que ela possa mudar de valor a qualquer momento, seja para numeros ou strings
+
+// Constante não pode mudar o valor (Funciona somente como booleano: true ou false)
+
+const serHumano = true;
+serHumano = false // Erro!
+
+
+Para criar uma função é igual na linguagem C que foi aprendido no IFsuldeminas:
+
+function sayHello(name){
+  alert("Olá" + name)
+}
+
+sayHello("Mayk")
+
+Irá trazer uma caixa de alerta escrita "Olá Mayk"
+
+
+Para criar uma função de soma:
+
+function soma(a, b) {
+  return a + b
+}
+
+
+let resultado = soma(3, 56)
+
+alert (resultado) 
+
+Irá aparecer uma caixa de alerta dando o resultado de 3 + 56
+
+document.querySelector("a") // fará com que a página busque o primeiro elemento contendo um link
+
+document.querySelector("a").click() // fará com que o elemento buscado "a" seja clicado na página 
+
+const celular = {
+	cor: "preto",
+	ligar: function (){
+		alert("Ligando...")
+	}
+}
+
+Se escrever "celular.ligar()" irá aparecer uma caixa de alerta dizendo "Ligando..."
+
+document.body.style.background = 'white' // Deixará a cor de fundo de branco
+
+Também posso mudar qualquer parte da página.
+
+document // É a representação do nosso documento em formato de objeto js e sempre que seguido por "." eu estarei acessando propriedades e funcionalidades, ou seja, dentro do "document" eu acesso a minha tag html atravéz do "documentElement "
+
+"classList" ( Lista de classe ) É um objeto que terá várias propriedades, uma delas é a função "contains()" para verificar se contem a classe desejada ( classe colocada dentro dos "()" )
+
+html.classList.remove('light') // Para remover a lista de classe "light"
+
+html.classList.add('light') // Para adicionar a lista de classe "light"
+ 
+function toggleMode() // nome da função adicionada no html //{
+   const html = document.documentElement
+
+   if( html.classList.contains('light')){
+
+	html.classList.remove('light')
+    } else {
+	html.classList.add('light')
+
+	}
+
+}
+
+Esse código pode ser simplificado: a função "toggle()" fará sozinha algo semelhante ao código acima 
+
+function toggleMode(){
+   html.classList.toggle('light')
+
+}
+
+img = querySelector("#prifile img") // É uma função que está no "document" que fará uma pesquisa pelo seletor, ou  seja, o argumento que irá dentro do "()" é o mesmo seletor css, neste caso é onde foi criado o "#profile img"
+
+Para se adicionar uma nova imagem:
+img.setAttribute('scr', './')// para adicionar, modificar, ajustar um atributo, neste caso ele estará no html e onde vc adicionou a imagem no scr
+
+function toggleMode() {
+   html.classList.toggle("light")
+
+   const img = document.querySelector("#profile img")
+
+   if(html.classList.contains('light'){
+       img.setAttribute('scr', './assets')
+
+    } else {
+       img.setAttribute('scr', './')
+    
+
+    }
+}
+
+
+
