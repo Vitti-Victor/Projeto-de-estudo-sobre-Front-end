@@ -32,6 +32,7 @@ body {
 
   /* background: color image repeat position/sizer*/
   background: var(--url-img) no-repeat top center / cover;
+  height: 100vh;
 }
 
 body * {
@@ -168,4 +169,14 @@ ul li a:hover {
 footer {
   text-align: center;
   padding: 24px 0;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --url-img: url(./assets/assets/bg-desktop.jpg);
+  }
+  
+  .light {
+    --url-img: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }

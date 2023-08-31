@@ -155,5 +155,16 @@ left: initial; /* Para quando mudar de estilo, "button" volte para o inicio */
 
 /* Na hora de alinhar itens é sempre bom usar o transform: translateY(); para poder ajustar o eixo y ou transform: tranlateX(); para ajustar o eixo x. É recomendável usar para alinhar o eixo y um top: 50%; junto de um transform: translate(-50%); para alinhar os itens */
 
+/*		QUERY MEDIA (@media)			*/
 
+@media(min-widht: 700px;){
+    :root{
+        --url-img: url();
+    }
 
+    .light{
+        --url-img: url();
+    }
+}
+
+/* Faz com que troque de imagem de fundo caso a tela seja maior que 700px (utilizados para não deixar espaços em branco caso a tela seja muito pequena ou muito grande) */
