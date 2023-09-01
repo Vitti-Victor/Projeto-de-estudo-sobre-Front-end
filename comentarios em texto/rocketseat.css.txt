@@ -168,3 +168,28 @@ left: initial; /* Para quando mudar de estilo, "button" volte para o inicio */
 }
 
 /* Faz com que troque de imagem de fundo caso a tela seja maior que 700px (utilizados para não deixar espaços em branco caso a tela seja muito pequena ou muito grande) */
+
+/* Faz com que o buttom tenha uma animação de deslizar */
+
+@keyframes slide-in {				
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  
+  to {
+    left: 0;
+  }
+}
+
+outline:; /* criar uma linha acima de onde fica o border */
+		
