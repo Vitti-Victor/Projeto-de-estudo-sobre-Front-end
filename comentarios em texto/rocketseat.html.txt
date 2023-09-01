@@ -28,5 +28,5 @@ target="_blank"/* É um atributo para criado para acesar outra página sem sair 
 
 <script scr=""></script> /* Para adicionar as progranações do JavaScript */
 
-onclick = "" /* desperte ao clicar. Dentro do " É preciso dar o nome de uma função que decerá ser utilizado no js " */
+onclick = "" /* desperte ao clicar. Dentro do " É preciso dar o nome de uma função que decerá ser utilizado no js "*/
 
